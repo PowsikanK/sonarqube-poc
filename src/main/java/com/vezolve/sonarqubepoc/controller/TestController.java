@@ -18,7 +18,7 @@ public class TestController {
         return "Hello User!";
     }
 
-    @GetMapping()
+    @GetMapping("/123")
     public String testing() {
         log.info("testing called");
         return "Hello Tester!";
