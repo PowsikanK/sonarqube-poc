@@ -8,6 +8,11 @@ pipeline {
                 steps {
     		sh "mvn clean install -DskipTests"
                 }
+                post{
+                  success{
+                    jacoco()
+                  }
+                }
             }
         stage('SonarQube Analysis') {
             steps {
