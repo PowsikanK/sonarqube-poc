@@ -14,13 +14,11 @@ public class TestController {
 
     @GetMapping()
     public String greeting() {
-        log.info("greeting called");
         return "Hello User!";
     }
 
     @GetMapping("/123")
     public String testing() {
-        log.info("testing called");
         return "Hello Tester!";
     }
 }

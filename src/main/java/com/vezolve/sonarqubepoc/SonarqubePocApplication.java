@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SonarqubePocApplication {
 
     public static void main(String[] args) {
-        log.info("main called");
         SpringApplication.run(SonarqubePocApplication.class, args);
     }
 
