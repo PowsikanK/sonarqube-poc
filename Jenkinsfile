@@ -5,15 +5,10 @@ pipeline {
     }
     stages {
         stage('Build') {
-                steps {
-    		sh "mvn clean install -DskipTests"
-                }
-                post{
-                  success{
-                    jacoco()
-                  }
-                }
+            steps {
+    		    sh "mvn clean install -DskipTests"
             }
+        }
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv(installationName: 'sonarqube') {
