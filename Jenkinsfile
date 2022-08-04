@@ -9,6 +9,11 @@ pipeline {
     		    sh "mvn clean install -DskipTests"
             }
         }
+        stage('Package') {
+            steps {
+                sh "mvn package"
+            }
+        }
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv(installationName: 'sonarqube') {
