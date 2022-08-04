@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/test")
-@AllArgsConstructor
-@Slf4j
 public class TestController {
 
     @GetMapping()
