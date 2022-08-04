@@ -17,4 +17,9 @@ class SonarqubePocApplicationTests {
         assertThat(testController).isNotNull();
     }
 
+    @Test
+    public void main() {
+        SonarqubePocApplication.main(new String[] {});
+    }
+
 }
