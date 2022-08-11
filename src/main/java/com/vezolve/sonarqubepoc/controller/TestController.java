@@ -10,6 +10,9 @@ public class TestController {
 
     @GetMapping()
     public String greeting() {
+        if (true) {
+            System.out.println("true = " + true);
+        }
         return "Hello User!";
     }
 
