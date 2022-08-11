@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class TestController {
-
+final int num =1;
     @GetMapping()
     public String greeting() {
-        if (true) {
-            System.out.println("true = " + true);
+        if (num == 1) {
+            System.out.println("true = " + 1);
         }
         return "Hello User!";
     }
